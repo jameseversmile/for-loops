@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #output {
+            background-color: black;
+            color: red;
+            font-size: 20px;
+            border: 2px solid black;
+            width: 1000px;
+            height: 300px;
+            
+        }
+       #parent {
+            height: 100vh;
+            padding: 20px;
+            width: 1000px;
+        }
+        
+    </style>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>title</title> 
 </head>
 <body>
-    welcome
-</body>
+    <div id="parent">
+
+    <div id="output"></div>
+    <h1 class="header">this is a box</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Earum ipsum delectus suscipit libero reprehenderit, neque fugit voluptate quisquam,
+        perspiciatis blanditiis aliquid iste totam. Deserunt distinctio ipsa officiis qui provident omnis?</p>
+        <button id="btn" onclick="changeColor('blue')">i am the button</button>
+    </div>
+
+      <ul>
+        <li>maggi </li>
+        <li>unripe plantain</li>
+        <li>beans cake</li>
+        <li>rice</li>
+        <li>yam</li>
+      </ul>
+    </body>
 <script src="script.js"></script>
 </html>
